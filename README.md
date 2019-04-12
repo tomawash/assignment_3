@@ -1,7 +1,9 @@
 For this project I chose to do it on a whole album rather than 1 song, that album being MGMT's "Little Dark Age".
 
 The visualization image used was a modified version of the album's cover art. It was changed up to allow for the words to fill up the space in a way that formed a more readable shape.
+
 Original cover art: https://github.com/tomawash/assignment_3/blob/master/maven-example/cover_art/MGMT%20LDA%20Cover%20Art.png
+
 Modified version: https://github.com/tomawash/assignment_3/blob/master/maven-example/cover_art/MGMT%20LDA%20Cover%20Art%20Transparent%20Fix%203.png
 
 The data structures used to count word frequencies were a hashtable + an array. The hastable was used to keep track of how many times a word appeared. The array was used to keep a list of the each unique word that appeared in the song, so that later when we want to read from the hastable we have a list of all the keys contained within it. To allow for both of them to be passed and recieved from a method, a class called "Song" was created that contained both a hastable and an array. The benefits of this implementation are that aside from having a frequency count, we also get a list of all unique words, which if needed could be used for something else, such as counting how many unique words appear or analyzing average length or number of vowels or something in a word.
